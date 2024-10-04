@@ -1,6 +1,9 @@
 .hero {
     padding: 80px 20px;
     background-color: #f1f1f1;
+    /* background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJBwEn1LCjcxSmWuw6KNMjOOeH7SPQniYX5g&s');
+    background-repeat: no-repeat;
+    background-size: cover; */
     text-align: left;
     display: flex;
     flex-direction: column;

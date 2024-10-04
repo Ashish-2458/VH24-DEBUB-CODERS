@@ -3,7 +3,14 @@ import '../Styles/HeroSection.css';
 import Benefits from './Benefits';
 import Subject from './Subject';
 import Testimonials from './Testimonials';
+import Footer from './Footer';
+import VideoConference from './VideoConference';
+import { useNavigate } from 'react-router-dom';
 
+
+
+
+ 
 function HeroSection() {
   return (
     <section className="hero">
@@ -14,7 +21,7 @@ function HeroSection() {
           <br></br>
           <p className="fade-in2">We help you find perfect tutors for 1-on-1 lessons. It is completely free and private.</p>
           <div className="btn-group">
-            <button className="btn btn-get-started">Get Started</button>
+            <button className="btn btn-get-started" >Get Started</button>
             <button className="btn btn-watch">See how it works</button>
           </div>
         </div>
@@ -32,6 +39,7 @@ function HeroSection() {
       <Benefits /><br />
       <Subject /><br />
       <Testimonials />
+      <VideoConference />
     </section>
   );
 }
