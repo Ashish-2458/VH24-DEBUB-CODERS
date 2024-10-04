@@ -8,7 +8,9 @@ import Benefits from './Components/Benefits';
 import HeroSection from './Components/Herosection';
 import Subject from './Components/Subject';
 import Testimonials from './Components/Testimonials';
-
+import Resources from './Components/Resources';
+import UserTypeForm from './Components/UserTypeForm';
+import UserDetailsForm from './Components/UserDetailsForm';
 function App() {
   return (
     <div className="App">
@@ -23,10 +25,13 @@ function App() {
          <Route path='/contact'  element={<h1>This is contact page</h1>}/>
          <Route path='/update'  element={<h1>This is update page</h1>}/>
          <Route path='/logout'  element={<h1>This is logout page</h1>}/>
+         <Route path='/signup'  element={<UserTypeForm/>}/>
          <Route path='/benefits'  element={<Benefits/>}/>
          <Route path='/'  element={<HeroSection/>}/>
          <Route path='/'  element={<Subject/>}/>
          <Route path='/'  element={<Testimonials/>}/>
+         <Route path='/resources'  element={<Resources/>}/>
+         <Route path='/details'  element={<UserDetailsForm/>}/>
          {/* <Route path="/meeting" element={< Meeting  
          meetingNumber = '713 1700 9557'
          role = {0}
@@ -39,9 +44,9 @@ function App() {
          
          />}  /> */}
 </Route>
-        <Route path='/signup'  element={<Signup/>}/>
+        {/* <Route path='/signup'  element={<Signup/>}/>
         <Route path='/login'  element={<Login />}/>
-        
+         */}
         
       </Routes>
 </BrowserRouter>

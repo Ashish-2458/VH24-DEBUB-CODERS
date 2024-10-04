@@ -2,6 +2,10 @@
     padding: 50px;
     background-color: #fff;
     text-align: center;
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR25hfELIpXN_vuSZHKs8cgzPub8JM9bIuCkw&s');
+    color: aliceblue;
+    background-size: cover;
+    background-repeat: no-repeat ;
   }
   
   .testimonial-item {

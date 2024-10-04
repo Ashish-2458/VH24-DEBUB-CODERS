@@ -6,7 +6,7 @@ function Benefits() {
     <section id="benefits" className="benefits">
       <h2>Benefits of online tutoring services with us</h2>
       <div className="benefits-list">
-        <div className="benefit-item">
+        <div className="benefit-item" >
           <h3>One-on-one Teaching</h3>
           <p>Personalized teaching according to your needs.</p>
         </div>
