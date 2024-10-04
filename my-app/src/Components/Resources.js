@@ -36,7 +36,7 @@ const Resources = () => {
     <div className="resources-container">
       <div className="subject-container">
         <div className="subject" style={{ backgroundImage: 'url(https://wallpapercave.com/wp/wp14061798.jpg)' }}>
-          <h2>Physics</h2>
+          <h2 className='heading'>Physics</h2>
           <button onClick={() => setSelectedPhysicsChapter(selectedPhysicsChapter === null ? 0 : null)}>
             {selectedPhysicsChapter === null ? 'Show Chapters' : 'Hide Chapters'}
           </button>
@@ -52,7 +52,7 @@ const Resources = () => {
         </div>
 
         <div className="subject" style={{ backgroundImage: 'url(https://wallpapercave.com/wp/wp11993721.jpg)' }}>
-          <h2>Chemistry</h2>
+          <h2 className='heading'>Chemistry</h2>
           <button onClick={() => setSelectedChemistryChapter(selectedChemistryChapter === null ? 0 : null)}>
             {selectedChemistryChapter === null ? 'Show Chapters' : 'Hide Chapters'}
           </button>
@@ -68,7 +68,7 @@ const Resources = () => {
         </div>
 
         <div className="subject" style={{ backgroundImage: 'url(https://wallpapercave.com/wp/wp13606474.jpg)' }}>
-          <h2>Mathematics</h2>
+          <h2 className='heading'>Mathematics</h2>
           <button onClick={() => setSelectedMathChapter(selectedMathChapter === null ? 0 : null)}>
             {selectedMathChapter === null ? 'Show Chapters' : 'Hide Chapters'}
           </button>

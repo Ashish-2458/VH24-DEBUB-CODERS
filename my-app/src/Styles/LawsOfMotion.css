@@ -39,12 +39,18 @@
   
   .content-layout {
     display: flex;
+    background-color: #FFE6C6;
   }
   
   .sidebar {
     width: 30%;
-    padding: 10px;
-    background-color: #FFD984;
+    padding: 15px;
+    background-color: #fff7ed;
+    margin-top: 30px ;
+    border-radius: 5px;
+    margin-left: 4px;
+    margin-bottom: 30px;
+
   }
   
   .main-content {

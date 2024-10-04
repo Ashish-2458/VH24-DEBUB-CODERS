@@ -1,6 +1,6 @@
 .hero {
     padding: 80px 20px;
-    background-color: #f1f1f1;
+    background-color: #fff7ed;
     /* background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJBwEn1LCjcxSmWuw6KNMjOOeH7SPQniYX5g&s');
     background-repeat: no-repeat;
     background-size: cover; */
@@ -44,7 +44,7 @@
   }
   
   .hero-stats {
-    background-color: #a6e3d8; /* Light background color */
+    background-color: #0d845e; /* Light background color */
     padding: 40px;             /* Padding inside the container */
     border-radius: 10px;        /* Rounded corners */
     text-align: center;         /* Center the text */
@@ -58,12 +58,12 @@
   .hero-stats div {
     font-size: 18px;            /* Font size for each stat */
     margin: 10px;               /* Space between the stats */
-    color: #333;                /* Text color */
+    color: #a4eb3e;                /* Text color */
   }
   
   .hero-stats strong {
     font-size: 24px;            /* Larger font for numbers */
-    color: #007bff;             /* A highlight color for emphasis */
+    color: #f0f8ff;             /* A highlight color for emphasis */
   }
   
   

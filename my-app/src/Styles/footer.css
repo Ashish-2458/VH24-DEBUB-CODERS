@@ -1,5 +1,5 @@
 .footer {
-  background-color: #121212;
+  background-color: #05402d;
   color: #ffffff;
   padding: 40px 0;
 }
@@ -56,7 +56,7 @@
 .newsletter input {
   padding: 10px;
   border: none;
-  border-radius: 5px 0 0 5px;
+  /* border-radius: 5px 0 0 5px; */
   outline: none;
 }
 
