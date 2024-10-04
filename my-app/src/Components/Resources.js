@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom'; // Import Link
 import '../Styles/Resources.css'; // Ensure to include your styles
 
 const Resources = () => {
@@ -7,28 +8,28 @@ const Resources = () => {
   const [selectedMathChapter, setSelectedMathChapter] = useState(null);
 
   const physicsChapters = [
-    { name: 'Kinematics', notes: 'Notes on Kinematics...' },
-    { name: 'Dynamics', notes: 'Notes on Dynamics...' },
-    { name: 'Thermodynamics', notes: 'Notes on Thermodynamics...' },
-    { name: 'Electromagnetism', notes: 'Notes on Electromagnetism...' },
-    { name: 'Optics', notes: 'Notes on Optics...' },
-    { name: 'Quantum Physics', notes: 'Notes on Quantum Physics...' },
+    { name: 'Kinematics', path: '/lawsofMotion' },
+    { name: 'Dynamics', path: '/dynamics' }, // Add paths for other chapters
+    { name: 'Thermodynamics', path: '/thermodynamics' },
+    { name: 'Electromagnetism', path: '/electromagnetism' },
+    { name: 'Optics', path: '/optics' },
+    { name: 'Quantum Physics', path: '/quantumPhysics' },
   ];
 
   const chemistryChapters = [
-    { name: 'Stoichiometry', notes: 'Notes on Stoichiometry...' },
-    { name: 'Organic Chemistry', notes: 'Notes on Organic Chemistry...' },
-    { name: 'Inorganic Chemistry', notes: 'Notes on Inorganic Chemistry...' },
-    { name: 'Physical Chemistry', notes: 'Notes on Physical Chemistry...' },
-    { name: 'Biochemistry', notes: 'Notes on Biochemistry...' },
+    { name: 'Stoichiometry', path: '/chemistry' },
+    { name: 'Organic Chemistry', path: '/organicChemistry' },
+    { name: 'Inorganic Chemistry', path: '/inorganicChemistry' },
+    { name: 'Physical Chemistry', path: '/physicalChemistry' },
+    { name: 'Biochemistry', path: '/biochemistry' },
   ];
 
   const mathChapters = [
-    { name: 'Calculus', notes: 'Notes on Calculus...' },
-    { name: 'Algebra', notes: 'Notes on Algebra...' },
-    { name: 'Geometry', notes: 'Notes on Geometry...' },
-    { name: 'Trigonometry', notes: 'Notes on Trigonometry...' },
-    { name: 'Statistics', notes: 'Notes on Statistics...' },
+    { name: 'Calculus', path: '/calculus' },
+    { name: 'Algebra', path: '/algebra' },
+    { name: 'Geometry', path: '/geometry' },
+    { name: 'Trigonometry', path: '/trigonometry' },
+    { name: 'Statistics', path: '/statistics' },
   ];
 
   return (
@@ -36,74 +37,50 @@ const Resources = () => {
       <div className="subject-container">
         <div className="subject" style={{ backgroundImage: 'url(https://wallpapercave.com/wp/wp14061798.jpg)' }}>
           <h2>Physics</h2>
-          <div>
-            <button onClick={() => setSelectedPhysicsChapter(selectedPhysicsChapter === null ? 0 : null)}>
-              {selectedPhysicsChapter === null ? 'Show Chapters' : 'Hide Chapters'}
-            </button>
-            {selectedPhysicsChapter !== null && (
-              <div>
-                {physicsChapters.map((chapter, index) => (
-                  <div key={index} onClick={() => setSelectedPhysicsChapter(index)}>
-                    {chapter.name}
-                  </div>
-                ))}
-              </div>
-            )}
-            {selectedPhysicsChapter !== null && (
-              <div className="notes">
-                <h3>{physicsChapters[selectedPhysicsChapter].name} Notes</h3>
-                <p>{physicsChapters[selectedPhysicsChapter].notes}</p>
-              </div>
-            )}
-          </div>
+          <button onClick={() => setSelectedPhysicsChapter(selectedPhysicsChapter === null ? 0 : null)}>
+            {selectedPhysicsChapter === null ? 'Show Chapters' : 'Hide Chapters'}
+          </button>
+          {selectedPhysicsChapter !== null && (
+            <div>
+              {physicsChapters.map((chapter, index) => (
+                <Link key={index} to={chapter.path} style={{ display: 'block', margin: '5px 0' }}>
+                  {chapter.name}
+                </Link>
+              ))}
+            </div>
+          )}
         </div>
 
         <div className="subject" style={{ backgroundImage: 'url(https://wallpapercave.com/wp/wp11993721.jpg)' }}>
           <h2>Chemistry</h2>
-          <div>
-            <button onClick={() => setSelectedChemistryChapter(selectedChemistryChapter === null ? 0 : null)}>
-              {selectedChemistryChapter === null ? 'Show Chapters' : 'Hide Chapters'}
-            </button>
-            {selectedChemistryChapter !== null && (
-              <div>
-                {chemistryChapters.map((chapter, index) => (
-                  <div key={index} onClick={() => setSelectedChemistryChapter(index)}>
-                    {chapter.name}
-                  </div>
-                ))}
-              </div>
-            )}
-            {selectedChemistryChapter !== null && (
-              <div className="notes">
-                <h3>{chemistryChapters[selectedChemistryChapter].name} Notes</h3>
-                <p>{chemistryChapters[selectedChemistryChapter].notes}</p>
-              </div>
-            )}
-          </div>
+          <button onClick={() => setSelectedChemistryChapter(selectedChemistryChapter === null ? 0 : null)}>
+            {selectedChemistryChapter === null ? 'Show Chapters' : 'Hide Chapters'}
+          </button>
+          {selectedChemistryChapter !== null && (
+            <div>
+              {chemistryChapters.map((chapter, index) => (
+                <Link key={index} to={chapter.path} style={{ display: 'block', margin: '5px 0' }}>
+                  {chapter.name}
+                </Link>
+              ))}
+            </div>
+          )}
         </div>
 
         <div className="subject" style={{ backgroundImage: 'url(https://wallpapercave.com/wp/wp13606474.jpg)' }}>
           <h2>Mathematics</h2>
-          <div>
-            <button onClick={() => setSelectedMathChapter(selectedMathChapter === null ? 0 : null)}>
-              {selectedMathChapter === null ? 'Show Chapters' : 'Hide Chapters'}
-            </button>
-            {selectedMathChapter !== null && (
-              <div>
-                {mathChapters.map((chapter, index) => (
-                  <div key={index} onClick={() => setSelectedMathChapter(index)}>
-                    {chapter.name}
-                  </div>
-                ))}
-              </div>
-            )}
-            {selectedMathChapter !== null && (
-              <div className="notes">
-                <h3>{mathChapters[selectedMathChapter].name} Notes</h3>
-                <p>{mathChapters[selectedMathChapter].notes}</p>
-              </div>
-            )}
-          </div>
+          <button onClick={() => setSelectedMathChapter(selectedMathChapter === null ? 0 : null)}>
+            {selectedMathChapter === null ? 'Show Chapters' : 'Hide Chapters'}
+          </button>
+          {selectedMathChapter !== null && (
+            <div>
+              {mathChapters.map((chapter, index) => (
+                <Link key={index} to={chapter.path} style={{ display: 'block', margin: '5px 0' }}>
+                  {chapter.name}
+                </Link>
+              ))}
+            </div>
+          )}
         </div>
       </div>
     </div>

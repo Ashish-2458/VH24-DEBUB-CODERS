@@ -40,7 +40,7 @@
     opacity: 0;
     transform: translateX(100%);
     animation: slide-in 1s forwards;
-    padding-left: 60px;
+    
   }
   
   .hero-stats {

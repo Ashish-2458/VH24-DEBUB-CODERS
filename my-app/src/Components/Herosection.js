@@ -6,6 +6,7 @@ import Testimonials from './Testimonials';
 import Footer from './Footer';
 import VideoConference from './VideoConference';
 import { useNavigate } from 'react-router-dom';
+import LawsOfMotion from './LawsOfMotion';
 
 
 
@@ -39,7 +40,8 @@ function HeroSection() {
       <Benefits /><br />
       <Subject /><br />
       <Testimonials />
-      <VideoConference />
+      {/* <VideoConference /> */}
+      {/* <LawsOfMotion/> */}
     </section>
   );
 }

@@ -3,6 +3,7 @@ import { Link , useNavigate } from 'react-router-dom';
 import '../Styles/nav.css';
 import Button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import GoogleTranslate from './GoogleTranslate';
 
 
 
@@ -38,7 +39,8 @@ const Navbar=()=>{
             {/* <li><Link to="/contact">Contact</Link></li> */}
             <li><Link to="/benefits">Benefits</Link></li>
             <li><Link to="/signup">Signup</Link></li>
-
+            <li><Link to="/google">Translator</Link></li>
+            <li><Link to="/tutor">Instant Tutoring</Link></li>
             
             {/* <li> {auth? <Link onClick={logout} to="/signup">Log Out</Link> :
             <Link to= "/signup"><Button bg="primary" variant="primary">Signup</Button>{' '}</Link>}
@@ -48,7 +50,7 @@ const Navbar=()=>{
                 
             </li> */}
 
-    
+        
         </ul>
         </div>
 

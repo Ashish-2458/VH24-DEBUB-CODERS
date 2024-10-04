@@ -12,6 +12,10 @@ import Resources from './Components/Resources';
 import UserTypeForm from './Components/UserTypeForm';
 import UserDetailsForm from './Components/UserDetailsForm';
 import VideoConference from './Components/VideoConference';
+import Chat from './Components/Chat';
+import  LawsOfMotion  from './Components/LawsOfMotion'; 
+import GoogleTranslate from './Components/GoogleTranslate';
+import  ChemistryNotes  from './Components/Chemistry-notes'; 
 
 function App() {
   return (
@@ -19,7 +23,6 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route element={<Private />}>
             <Route path='/Herosection' element={<HeroSection />} />
             <Route path='/product' element={<h1>This is Product</h1>} />
             <Route path='/add' element={<h1>Add Product</h1>} />
@@ -33,14 +36,15 @@ function App() {
             <Route path='/' element={<Subject />} />
             <Route path='/' element={<Testimonials />} />
             <Route path='/resources' element={<Resources />} />
+            <Route path="/lawsofMotion" element={<LawsOfMotion />} />
+            <Route path="/chemistry" element={<ChemistryNotes />} />
             <Route path='/details' element={<UserDetailsForm />} />
             {/* Add the VideoConference route */}
             <Route path='/meeting' element={<VideoConference />} />
-          </Route>
-          {/* Uncomment these if needed */}
-          {/* <Route path='/signup' element={<Signup />} />
-          <Route path='/login' element={<Login />} /> */}
-        </Routes>
+            <Route path='/askai' element={<Chat />} />
+            <Route path='/google' element={<GoogleTranslate/>} />
+            <Route path='/tutor' element={<VideoConference/>} />
+        </Routes>y
       </BrowserRouter>
       <Footer />
     </div>

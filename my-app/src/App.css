@@ -36,3 +36,73 @@
     transform: rotate(360deg);
   }
 }
+
+
+.laws-of-motion {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  line-height: 1.6;
+}
+
+h1, h2 {
+  color: #2c3e50;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin: 20px 0;
+}
+
+.mathjax-scroll {
+  background-color: #f7f7f7;
+  padding: 10px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.laws-of-motion {
+  padding: 20px; /* Optional: Add some padding for better layout */
+}
+
+.law-image {
+  width: 75%; /* Set the width to 75% of the original size */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Center the image if needed */
+  margin: 20px auto; /* Centering the images */
+  border-radius: 8px; /* Optional: Add rounded corners */
+}
+
+.content-layout {
+  display: flex;
+}
+
+.sidebar {
+  width: 30%;
+  padding: 10px;
+  background-color: #f1f1f1;
+}
+
+.main-content {
+  width: 75%;
+  padding: 10px;
+}
+
+.search-bar {
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  width: 90%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.law-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.quiz-question {
+  margin-bottom: 20px;
+}
