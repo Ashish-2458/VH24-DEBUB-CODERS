@@ -1,0 +1,29 @@
+.hero {
+    padding: 80px 20px;
+    background-color: #f1f1f1;
+    text-align: center;
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero-stats {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+  }
+  
+  .btn-get-started {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    margin-right: 10px;
+  }
+  
+  .btn-watch {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+  }

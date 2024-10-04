@@ -4,8 +4,10 @@ import { BrowserRouter , Route , Routes } from 'react-router-dom';
 import Signup from './Components/Signup';
 import Private from './Components/Private';
 import Login from './Components/Login';
-// import Meeting from './Components/Meeting';
-
+import Benefits from './Components/Benefits';
+import HeroSection from './Components/Herosection';
+import Subject from './Components/Subject';
+import Testimonials from './Components/Testimonials';
 
 function App() {
   return (
@@ -14,14 +16,17 @@ function App() {
       <Navbar/>
       <Routes>
         <Route element = {<Private />}>
-        <Route path='/'  element={<h1>This is Sanjana Choubey</h1>}/>
+        <Route path='/Herosection'  element={<HeroSection/>}/>
          <Route path='/product'  element={<h1>This is Product</h1>}/>
          <Route path='/add'  element={<h1>Add Product</h1>}/>
          <Route path='/profile'  element={<h1>This is profile</h1>}/>
          <Route path='/contact'  element={<h1>This is contact page</h1>}/>
          <Route path='/update'  element={<h1>This is update page</h1>}/>
          <Route path='/logout'  element={<h1>This is logout page</h1>}/>
-         
+         <Route path='/benefits'  element={<Benefits/>}/>
+         <Route path='/'  element={<HeroSection/>}/>
+         <Route path='/'  element={<Subject/>}/>
+         <Route path='/'  element={<Testimonials/>}/>
          {/* <Route path="/meeting" element={< Meeting  
          meetingNumber = '713 1700 9557'
          role = {0}
@@ -40,7 +45,7 @@ function App() {
         
       </Routes>
 </BrowserRouter>
-{/* <Footer/> */}
+<Footer/>
      
     </div>
   );

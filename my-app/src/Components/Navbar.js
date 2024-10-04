@@ -21,14 +21,23 @@ const Navbar=()=>{
          navigate('/signup');
     }
     return (
+        <>
+
         <div className='nav-ul' data-bs-theme="dark">
+        <div className=''>
+        <h3 className='header'>EduBridge</h3>
+        <img src="../src/logo.svg" alt="" />
+        </div>
+        
         <ul>
             <li><Link to="/">Home</Link></li>
-            <li><Link to="/product">Products</Link></li>
-            <li><Link to="/add">AddProducts</Link></li>
-            <li><Link to="/update">UpdateProducts</Link></li>
-            <li><Link to="/profile">Profile</Link></li>
+            <li><Link to="/askai">Ask AI</Link></li>
+            {/* <li><Link to="/instant">Instant Tutoring</Link></li> */}
+            <li><Link to="/resources">Resources</Link></li>
+            {/* <li><Link to="/profile">Profile</Link></li> */}
             <li><Link to="/contact">Contact</Link></li>
+            <li><Link to="/benefits">Benefits</Link></li>
+            
             <li> {auth? <Link onClick={logout} to="/signup">Log Out</Link> :
             <Link to= "/signup"><Button bg="primary" variant="primary">Signup</Button>{' '}</Link>}
             </li>
@@ -40,6 +49,10 @@ const Navbar=()=>{
     
         </ul>
         </div>
+
+        </>
+        
+
     )
 }
 
