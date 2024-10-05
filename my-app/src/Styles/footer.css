@@ -2,6 +2,8 @@
   background-color: #05402d;
   color: #ffffff;
   padding: 40px 0;
+  position:static;
+  bottom: 0px;
 }
 
 .footer-container {
