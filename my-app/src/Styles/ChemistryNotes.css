@@ -38,14 +38,17 @@
   .sidebar {
     width: 30%; /* Sidebar width */
     padding: 10px; /* Padding */
-    background-color: #b2e1ff; /* Light blue background */
+    background-color: #fff7ed;
+    margin-left: 5px;
   }
   
   /* Main content styling */
   .main-content {
     width: 70%; /* Adjusted width for main content */
     padding: 10px; /* Padding */
-    background-color: #e1f7ff; /* Soft blue background */
+    background-color: #ffe6c6; 
+    margin-left: 20px;
+    margin-right: 20px;
   }
   
   /* Search bar styling */
