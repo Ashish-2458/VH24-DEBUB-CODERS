@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../Styles/LawsOfMotion.css'; // Ensure your styles are included
+import '../Styles/LawsOfMotion.css';
 
 function LawsOfMotion() {
     // State for the search bar
@@ -91,6 +91,7 @@ function LawsOfMotion() {
                         This article will go through Sir Isaac Newton’s Laws of Motion, which revolutionised our understanding of the physical world centuries ago. This article explores Newton’s three laws and provides a deep understanding of their implications. Starting with Newton’s First Law of Motion, also known as the Law of Inertia, we delve into how objects behave when at rest or in uniform motion. Moving on to Newton’s Second Law of Motion, we unravel the relationship between mass, acceleration and external forces. Next, we explore Newton’s Third Law of Motion, shedding light on the concept of action and reaction. A concise summary of Newton’s laws offers a recap of the key concepts, while numerical examples in the Laws of Motion Numericals section demonstrate practical applications. Finally, our Frequently Asked Questions (FAQs) section covers additional queries, ensuring a comprehensive understanding of Newton’s Laws of Motion.
                     </p>
                     <img title="Laws-of-motion" className="law-image" src={require('../assets/laws.png')} alt="Newton's Law Of Motion" />
+
 
                     <h1>Newton’s First Law of Motion</h1>
                     <p>
