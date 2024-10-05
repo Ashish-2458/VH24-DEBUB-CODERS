@@ -1,0 +1,75 @@
+/* General styling for the Chemistry notes section */
+.chemistry-notes {
+    font-family: Arial, sans-serif;
+    margin-top: 20px;
+    line-height: 1.6;
+    padding: 20px; /* Padding for better layout */
+    background-color: #fff7ed; /* Light background color */
+    border-radius: 9px; /* Rounded corners */
+  }
+  
+  /* Header styling */
+  h1, h2 {
+    color: #1c1c1c; /* Dark text color */
+  }
+  
+  /* Image styling */
+  img {
+    max-width: 100%; /* Ensure images are responsive */
+    height: auto; /* Maintain aspect ratio */
+    margin: 10px 0; /* Margins for spacing */
+    border-radius: 8px; /* Rounded corners for images */
+  }
+  
+  /* MathJax scrollable area styling */
+  .mathjax-scroll {
+    background-color: #ffe6c6; /* Soft blue background */
+    padding: 10px; /* Padding for MathJax */
+    border-radius: 5px; /* Rounded corners */
+    display: inline-block; /* Inline block for MathJax content */
+  }
+  
+  /* Layout styling for sidebar and main content */
+  .content-layout {
+    display: flex; /* Flexbox for layout */
+  }
+  
+  /* Sidebar styling */
+  .sidebar {
+    width: 30%; /* Sidebar width */
+    padding: 10px; /* Padding */
+    background-color: #b2e1ff; /* Light blue background */
+  }
+  
+  /* Main content styling */
+  .main-content {
+    width: 70%; /* Adjusted width for main content */
+    padding: 10px; /* Padding */
+    background-color: #e1f7ff; /* Soft blue background */
+  }
+  
+  /* Search bar styling */
+  .search-bar {
+    margin-bottom: 20px; /* Bottom margin */
+  }
+  
+  .search-bar input {
+    width: 90%; /* Width of the search input */
+    padding: 10px; /* Padding inside input */
+    font-size: 16px; /* Font size */
+  }
+  
+  /* Quiz question styling */
+  .quiz-question {
+    margin-bottom: 20px; /* Bottom margin for questions */
+  }
+  
+  .quiz-question p {
+    font-weight: bold; /* Bold for question text */
+  }
+  
+  .quiz-question label {
+    display: block; /* Block display for labels */
+    margin: 10px 0; /* Margins for labels */
+  }
+  

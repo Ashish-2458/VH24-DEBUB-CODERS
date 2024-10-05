@@ -16,6 +16,9 @@ import Chat from './Components/Chat';
 import  LawsOfMotion  from './Components/LawsOfMotion'; 
 import GoogleTranslate from './Components/GoogleTranslate';
 import  ChemistryNotes  from './Components/Chemistry-notes'; 
+import roomId from './Components/VideoConference';
+import JoinCall from './Components/JoinCall';
+import TutorStudentPage from './Components/Tutors';
 
 function App() {
   return (
@@ -43,9 +46,15 @@ function App() {
             <Route path='/meeting' element={<VideoConference />} />
             <Route path='/askai' element={<Chat />} />
             <Route path='/google' element={<GoogleTranslate/>} />
-            <Route path='/tutor' element={<VideoConference/>} />
-        </Routes>y
+            {/* <Route path='/tutor' element={<VideoConference roomId={roomId}/>} /> */}
+            <Route path='/student' element={< TutorStudentPage/>} />
+            <Route path='/tutor' element={<JoinCall />} />
+            
+
+        </Routes>
+
       </BrowserRouter>
+      {/* <JoinCall/> */}
       <Footer />
     </div>
   );
