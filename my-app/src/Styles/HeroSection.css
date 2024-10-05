@@ -53,6 +53,7 @@
     align-items: center;        /* Align items vertically */
     font-family: 'Arial', sans-serif; /* Font style */
     margin-top: 20px;           /* Space above the container */
+    width: 100%;
   }
   
   .hero-stats div {
